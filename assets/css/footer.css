@@ -1,7 +1,7 @@
 /* Footer principal */
 
 #footerPage {
-    height: 520px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     background-color: var(--azulClaro);
