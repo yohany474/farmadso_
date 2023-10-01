@@ -9,7 +9,7 @@
 }
 
 .footerLinks {
-    height: 250px;
+    height: 260px;
     justify-content: space-around;
     display: flex;
     padding-bottom: 2em;
@@ -108,8 +108,8 @@
 }
 .FooterEnlacesWeb {
     display: flex;
-    font-size: 1.8em;
-    gap: 1em;
+    font-size: 2em;
+    gap: .8em;
     justify-content: space-around;
 }
 
