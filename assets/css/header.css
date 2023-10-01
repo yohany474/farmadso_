@@ -1,0 +1,203 @@
+:root {
+    --azulOscuro: #2d57a8;
+    --verdeClaro: #b5ddca;
+    --verdeOscuro: #33a892;
+    --blanco: #fffefe;
+    --azulClaro: #6d93c9;
+}
+
+#header {
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+}
+
+.cabeceraSuperior {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 6em;
+    background-image: url('../img/banner3.png');
+    background-size: fill;
+    background-repeat:no-repeat;
+    background-position:center;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 7rem;
+    height: 6rem;
+}
+
+#logoimg {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.search{
+    display: flex;
+    width: 35%;
+    height: 2.5em;
+    position: relative;
+}
+
+#search{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding-left: 7em;
+    border: 1px solid var(--azulOscuro);
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 5px;
+    outline: none;
+}
+
+#search::placeholder{
+    color: var(--azulOscuro);
+    font-size: 16px;
+}
+
+#buscadorCategoria{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6em;
+    height: 100%;
+    border: 1px solid var(--azulOscuro) !important;
+    border-top-left-radius: 20px !important;
+    border-bottom-left-radius: 20px;
+    padding-left: .5rem;
+    position: absolute;
+    color: var(--azulOscuro);
+    text-transform: capitalize;
+    left: 0;
+    bottom: 0;
+    cursor: pointer;
+    outline: none;
+}
+
+
+#btnlupa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 4em;
+    height: 100%;
+    border:  1px solid var(--azulOscuro);
+    border-top-right-radius: 20px;
+    background-color: var(--azulOscuro); 
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+}
+
+#btnlupa:hover{
+    background-color: var(--blanco);
+    color: var(--azulOscuro);
+}
+.lupa{
+    color: var(--blanco);
+    font-size: 15px;
+}
+
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 5px;
+    
+}
+
+.list_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align:end;
+    flex: 1;    
+    font-size: 19px;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: var(--azulOscuro);
+    height: 4em;
+    list-style: none;
+    gap: .5em;
+    background-color: transparent;
+    border: none;
+    width: 7rem;
+    font-weight: 600;
+    transition: all ease .2s;
+}
+
+.icon{
+    font-size: 30px;
+}
+.list_item:hover,
+.list_item:focus {
+    display: flex;
+    align-items: center;
+    color: var(--azulClaro);    
+    border-radius: 100px;
+    
+}
+
+a {
+    text-transform: capitalize;
+    text-decoration: none;
+    color: #03066a;
+}
+
+.cabeceraInferior{
+    display: flex;
+    align-items: center;
+    background-color: var(--azulOscuro);
+    height: 2rem;
+    color: var(--blanco);
+    justify-content: space-around;
+}
+
+
+/* menu de categorias */
+.menu2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.menu>#menu2categoria{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 15px;
+}
+.categoriasmenu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex: 1;    
+    font-size: 15px;
+    cursor: pointer;
+    text-transform: capitalize;
+    color: var(--blanco);
+    list-style: none;
+    gap: .5em;
+    background-color: transparent;
+    border: none;
+    font-weight: 600;
+    
+}
