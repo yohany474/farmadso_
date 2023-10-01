@@ -1,0 +1,19 @@
+/* reseteo */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --azulOscuro: #2d57a8;
+    --verdeClaro: #b5ddca;
+    --verdeOscuro: #33a892;
+    --blanco: #fffefe;
+    --azulClaro: #6d93c9;
+}
+body{
+    display: flex;
+}
+h1{
+    color: var(--azulOscuro);
+}
