@@ -111,6 +111,12 @@
     display: none;
 }
 
+#iconoMenu {
+    display: none;
+}
+
+
+
 #usericon {
     display: none;
 }
@@ -177,9 +183,7 @@ a {
     display: flex;
     align-items: center;
     background-color: var(--azulOscuro);
-    height: 2rem;
     color: var(--blanco);
-    flex-wrap: wrap;
     padding: .5rem;
 }
 
@@ -262,6 +266,16 @@ a {
     gap: 10px;
 }
 
+#aside {
+    display: flex;
+    flex-direction: column;
+    transform: translateX(-500%);
+    position: absolute;
+    z-index: 4;
+    height: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
+    background-color: #f0f2f5;
+  }
 @media screen and (max-width: 700px) {
     .cabeceraSuperior {
         display: flex;
@@ -387,14 +401,7 @@ a {
         background-color: var(--blanco);
     }
 
-    #aside {
-        transform: translateX(-500%);
-        position: absolute;
-        z-index: 3;
-        height: 100vh;
-        box-shadow: rgba(0, 0, 0, 0.15) 2.4px 2.4px 3.2px;
-        background-color: #f0f2f5;
-      }
+   
     
       .mostrarMenu {
         width: 85vw !important;
