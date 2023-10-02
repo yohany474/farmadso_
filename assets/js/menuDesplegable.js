@@ -2,7 +2,6 @@ const menus = document.querySelectorAll('.categoriasmenu');
 const contenido = document.querySelector('.contenido-desplegable');
 const linea = document.getElementById('linea');
 
-
 menus.forEach((menu) => {
     menu.addEventListener('mouseover', () => {
         contenido.style.display = 'block';
@@ -12,14 +11,14 @@ menus.forEach((menu) => {
     
 });
 
-contenido.forEach((contenido) =>{
-    contenido.addEventListener('mouseover', () => {
-        contenido.style.display = 'flex';
-    });
-    contenido.addEventListener('mouseout', () => {
-        contenido.style.display = 'none';
-    });
-})
+contenido.addEventListener('mouseover', () => {
+    contenido.style.display = 'block';
+});
+
+contenido.addEventListener('mouseout', () => {
+    contenido.style.display = 'none';
+});
+
 function getRandomColor() {
     const letters = '0123456789ABCDEF';
     let color = '#';
